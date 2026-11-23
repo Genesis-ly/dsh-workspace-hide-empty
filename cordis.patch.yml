@@ -1,0 +1,7 @@
+# dsh-workspace-hide-empty bundle patch：
+# 把一个 Loader 行插入当前 profile 的插件清单。
+# 宿主半是空实现；真正干活的是浏览器半（lib/client.js），
+# 启动后在页面里按三条规则隐藏空工作区行。
+- insert:
+    - id: workspace-hide-empty
+      name: dsh-workspace-hide-empty

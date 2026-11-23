@@ -1,0 +1,11 @@
+node_modules/
+*.bak-*
+*.bak-install
+install-backup/
+test/tmp/
+.tmp/
+secret.json
+*.log
+desktop-clean-exit.state.json
+.DS_Store
+Thumbs.db

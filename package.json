@@ -1,0 +1,41 @@
+{
+  "name": "dsh-workspace-hide-empty",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "description": "Hides non-default DSH workspaces whose sessions are all archived, while keeping the default workspace and brand-new workspaces visible.",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "scripts"
+  ],
+  "scripts": {
+    "test": "node test/policy.test.mjs",
+    "check-contract": "node scripts/check-contract.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "workspace",
+    "sidebar",
+    "ui"
+  ]
+}
